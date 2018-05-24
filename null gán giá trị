@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace null_kieu
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int? age = null;
+            double? mark = null;
+            float? price = null;
+            age = 10;
+            Console.WriteLine("age",age);
+            Console.WriteLine("mark",mark);//  +( mark.hasvalue?mark.value:0));  có giá trị hay ko nếu ko thì lấy giá trị value toán tử 3 ngôi
+            Console.WriteLine("price", price);//("price:"+ (price ??0));   nếu null thì lấy giá trị trái không null thì phải
+            Console.ReadLine();
+            Console.ReadKey();
+
+        }
+    }
+}
