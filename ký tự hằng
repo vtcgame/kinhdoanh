@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp16
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            \\	Ký tự \
+\'	Ký tự '
+\"	Ký tự "
+\?	Ký tự ?
+\a Tiếng chuông
+\b Backspace
+\f Form feed
+\n Dòng mới
+\r Carriage return
+\t tab ngang
+\v tab dọc
+\ooo Số trong cơ số 8 của 1 đến 3 chữ số
+\xhh. . .Số thập lục phân của một hoặc nhiều chữ số
+        }
+    }
+}
