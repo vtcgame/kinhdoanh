@@ -1,0 +1,46 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace toantu3ngoi
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double diem;
+            Console.WriteLine("moi ban nhap vao diem x tu ban phim");
+            Console.Write("moi ban nhap");
+            diem = double.Parse(Console.ReadLine());
+            string ketqua = diem >= 5 ? "dau" : "rot";
+            if (diem >= 8)
+            {
+                Console.WriteLine("gioi");
+                Console.ReadLine();
+                return;
+            }
+            else if (diem >= 6.5)
+            {
+                Console.WriteLine("kha");
+                Console.ReadLine();
+                return;
+                    }
+            else if (diem >= 5)
+            {
+                Console.WriteLine("trung binh");
+                Console.ReadLine();
+                return;
+            }
+            else if (diem >= 4)
+            {
+                Console.WriteLine("yeu");
+                Console.ReadKey();
+                return;
+            }
+            Console.ReadLine();
+            
+        }
+    }
+}
