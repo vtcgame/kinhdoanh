@@ -1,0 +1,49 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp16
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!        toán tử quan hệ
+            (A == B) là không đúng.
+                (A != B) là true.
+                (A > B) là không đúng.
+                (A < B) là true.
+                (A >= B) là không đúng.
+                (A <= B) là true.
+                {
+ !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!               toán tử số học
+                A + B sẽ cho kết quả là 30
+               A - B sẽ cho kết quả là -10
+               A * B sẽ cho kết quả là 200
+              B / A sẽ cho kết quả là 2
+                B % A sẽ cho kết quả là 0
+              A++ sẽ cho kết quả là 11
+             A-- sẽ cho kết quả là 9
+             {
+             Toán tử logic trong C#
+             (A && B) là false.
+              (A || B) là true.
+              !(A && B) là true.
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!         Toán tử gán trong C#
+              C = A + B sẽ gán giá trị của A + B vào trong C
+              C += A tương đương với C = C + A
+              C -= A tương đương với C = C - A
+              C *= A tương đương với C = C * A
+              C /= A tương đương với C = C / A
+              C %= A tương đương với C = C % A
+              C <<= 2 tương đương với C = C << 2
+              C >>= 2 tương đương với C = C >> 2
+              C &= 2 tương đương với C = C & 2
+              C ^= 2 tương đương với C = C ^ 2
+              C |= 2 tương đương với C = C | 2
+
+        }
+    }
+}
