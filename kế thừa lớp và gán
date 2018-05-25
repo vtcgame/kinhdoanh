@@ -1,0 +1,46 @@
+private void Form1_Load(object sender, EventArgs e)
+        {
+string strketqua = "";
+            //khai bao 1 doi tuong mèo
+            cat tom = new cat();
+            cat jonh = new cat();
+            // gán thuộc tính
+            tom.Somat = 2;
+            tom.Sochan = 4;
+            tom.Maulong = "mau đen";
+            // hiện thị thông tin của loài mèo
+            strketqua += "thông tin của mèo \r\n";
+            strketqua += "số mắt" + tom.Somat+ "\r\n";
+            strketqua += "số chân" + tom.Sochan+ "\r\n";
+            strketqua += "màu lông" + tom.Maulong+ "\r\n";
+            strketqua += "tiếng kêu" + tom._tiengkeu()+"\r\n";
+            // hiển thị thông tin của loài chó
+            strketqua += "thông tin của chó \r\n";
+            strketqua += "số mắt" + jonh.Somat + "\r\n";
+            strketqua += "số chân" + jonh.Sochan + "\r\n";
+            strketqua += "màu lông" + jonh.Maulong + "\r\n";
+            strketqua += "tiếng kêu" + jonh._tiengkeu() + "\r\n";
+
+            txtthongtin.Text = strketqua;
+            
+            //ke thua lop 
+            namespace WindowsFormsApp21
+{
+    public class animal
+    {
+        private int _sochan;
+        private int _somat;
+        private string _maulong;
+
+        public int Sochan { get => _sochan; set => _sochan = value; }
+        public int Somat { get => _somat; set => _somat = value; }
+        public string Maulong { get => _maulong; set => _maulong = value; }
+
+        public string _tiengkeu()
+        {
+            return "";
+            
+            //ke thua lop animal
+            namespace WindowsFormsApp21
+{
+    public class cat:animal
