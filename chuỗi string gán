@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace @string
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Cac cach tao chuoi trong C#");
+            Console.WriteLine("-------------------------------------");
+
+            //su dung phep gan hang chuoi va toan tu noi chuoi
+            string fname, lname;
+            fname = "Tran Minh";
+            lname = "Chinh";
+
+            string fullname = fname + " " + lname;
+            Console.WriteLine("Ho va ten: {0}", fullname);
+
+            //su dung constructor cua lop string
+            char[] letters = { 'H', 'e', 'l', 'l', 'o' };
+            string greetings = new string(letters);
+            Console.WriteLine("\nLoi chao bang tieng Anh: {0}", greetings);
+
+            //tu cac phuong thuc ma tra ve mot chuoi
+            string[] sarray = { "xin", "chao", "cac", "ban" };
+            string message = String.Join(" ", sarray);
+            Console.WriteLine("\nThong diep: {0}", message);
+
+            //dinh dang phuong thuc de chuyen doi mot gia tri
+            DateTime waiting = new DateTime(2016, 8, 1, 17, 58, 1);
+            string chat = String.Format("Thong diep duoc gui luc {0:t} ngay {0:D}", waiting);
+            Console.WriteLine("\nThong diep: {0}", chat);
+
+            Console.ReadKey();
+        }
+    }
+}
