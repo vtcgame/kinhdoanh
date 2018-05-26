@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace whiledowhile
+{
+    class Program
+    {
+        static void hocdowhile()
+        {
+            int n;
+            Console.WriteLine("moi thim nhap so n");
+            n = int.Parse(Console.ReadLine());
+            int gt = 1;
+            int i = 1;
+            do
+            {
+                gt *= i;
+                i++;
+            } while (i <= n);
+            Console.WriteLine("{0}!={1}",n,gt);
+            Console.ReadLine();
+        }
+        static void Main(string[] args)
+        {
+            hocdowhile();
+        }
+    }
+}
