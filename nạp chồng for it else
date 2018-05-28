@@ -1,0 +1,87 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace lopclassska
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            //khai báo biến chứa kết quả
+            string strketqua = "";
+            //khai bao thông tin xe
+            xemay haibanh = new xemay();
+            haibanh.Ten = 5;
+            haibanh.Thongtinxe = 20;
+            haibanh.Xeloaigi1 = "xe may +oto";
+            //hiển thị thông tin của xe máy 2 bánh
+            strketqua += "thông tin của xe 2 bánh: \r\n";
+            strketqua += "tên người điều khiển" + haibanh.Ten + "\r\n";
+            strketqua += "thông tin người lái xe" + haibanh.Thongtinxe +"\r\n";
+            strketqua += "thông tin xe oto hay xe máy:" + haibanh.Xeloaigi1 + "\r\n";
+            strketqua += "xe may banh:" + haibanh.Xemaybanh() + "\r\n";
+
+            txtthongtin.Text = strketqua;
+        }
+
+        private void txtthongtin_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
+////////////////////////////////////////////////class
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace lopclasska
+{
+    public class xehaibanh
+    {
+        private int _Ten;
+        private int _Thongtinxe;
+        private String Xeloaigi;
+
+        public int Ten { get => _Ten; set => _Ten = value; }
+        public int Thongtinxe { get => _Thongtinxe; set => _Thongtinxe = value; }
+        public string Xeloaigi1 { get => Xeloaigi; set => Xeloaigi = value; }
+
+        public String Xemaybanh()
+        {
+         return "";
+
+
+        }
+
+    }
+}
+///////////////////////////////////////class kế thừa
+using lopclasska;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace lopclassska
+{
+    class xemay: xehaibanh
+    {
+    }
+}
+
