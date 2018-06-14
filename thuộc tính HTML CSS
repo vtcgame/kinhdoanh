@@ -1,0 +1,27 @@
+thẻ div
+width :12px;         CHIỀU RỘNG
+margin:auto;         thuộc tính
+height:40px;      ĐỘ CAO
+background-color:    MÀU
+float:left;           nổi lên bên trái
+float:right;           nổi lên bên phải
+------------------------------------
+font-family:arial,helvetica, sans-serif
+font-size:16px;
+font-style:italic;
+font-weight:bold;
+--------------------------------------------
+text-align              canh giữa, canh trái, canh phải
+text-indent:50px        thụt vào đầu dòng 50px;
+text-decoration:none;        bỏ gạch chân các chữ
+line-height:40px;          canh giữa thuộc tính chữ
+border:5px solid #red;      đường viền chữ
+=============================================
+margin-top:...px;            canh len le
+margin-right:....px;
+margin-bottom:.....px;        cachs le xuong duoi
+margin-left.......px;
+padding-top:20px;
+margin-top:10px  0px 10px 0px;
+          :top   right  bottom left;
+-----------------------------------------------
